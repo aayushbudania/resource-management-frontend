@@ -4,16 +4,12 @@ export default function Lecturehall(props) {
   }
 
   return (
-    <div class="h-100 flex justify-center bg-teal-lightest font-sans">
-      {/* <h2>{props.text}</h2> */}
-      {/* <div >
-            <button  onClick={deleteHandler}>Delete</button>
-          </div> */}
-      <div class="flex mb-4 items-center">
-        <p class="w-full text-grey-darkest">{props.text}</p>
-        <button class="flex-no-shrink p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red" onClick={deleteHandler}>Remove</button>
+    <>
+      <div className="flex mb-4 items-center" background= "#26A9E1">
+        <p className="w-full text-grey-darkest">{props.text}</p>
+        <button className="flex-no-shrink p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red" onClick={deleteHandler}>Remove</button>
       </div>
-    </div>
+    </>
   );
 }
 
