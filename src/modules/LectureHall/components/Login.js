@@ -8,7 +8,7 @@ export default function Login({ setIsLoggedIn, setIsAdmin, setUser }) {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    fetch("https://lecture-hall-backend.herokuapp.com/login", {
+    fetch("https://lecture-hall-backend-production.up.railway.app/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
